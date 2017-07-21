@@ -180,6 +180,20 @@ a.navlink:hover {
   color: #999999;
 }
 
+@media only screen and (max-width: 580px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-main {
+    display: none;
+  }
+  .post {
+    flex-direction: column;
+  }
+  .about-side {
+    width: 80%;
+  }
+}
 
 .about-main {
   width: 60%;
@@ -260,12 +274,30 @@ a.navlink:hover {
 @media only screen and (max-width: 580px) {
   
   .courses {
-    flex-direction: column;
+    display: none;
   }
   
-  .course {
-    width: 80%;
+  .mobile-learn-container {
+    display: contents;
   }
+}
+
+.mobile-learn-container {
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.mobile-course {
+  background-color: #d7d7d7;
+  color: #5d737e;
+  text-align: left;
+  padding-left: 16px;
+  width: 80%;
+  margin-bottom: 8px;
+}
+
+.mobile-course {
+  display: none;
 }
 
 .course:hover {
